@@ -118,7 +118,7 @@ url_to_head(paypal_sdk_url + "?client-id=" + client_id + "&enable-funding=paypal
                     headers: {
                         "Content-Type": "application/json; charset=utf-8",
                         'Authorization': "Bearer eyJhbGciOiJSU0EtT0FFUC0yNTYiLCJlbmMiOiJBMjU2R0NNIn0.To4IcyHtzCGiFCX9xAxqFKm-POhAE5iKMxM_c1IW8ioWZJvDpz0sUWbTNrW_OYKF2ft-8xuCoYUlW926rr8nyXxvnL1h5P1R9bekTUszVtnciOG5fJgAGHxjL_OKqQ1vKhpmiEA0a4X3o3MEFTo88sAZceDlSMOu06GR2ixmTt9ZyQ33tfLncaBAApLxRFq9adP-TeEwghC_3XdB7DnyI2s_N8F3cvu65Ywpdz3bEc36teSYkRcpLOyJKw0Ni5PIOevTBhNUSdZvgr_EH34zkE9XfgDM_bz4phic5qHPN4_R_bavCNCwp_pofXPcSJ4DWmITYQTNDBv54EhedOG2og.5KAh8t6XqTQAZsqX.BHGwyTByyQpvdCbkc9zbaLPJmxYqUXRET5KoAyxtqO7azhcKQrohXRcOfsGgCMJuRLCi6U8zp3CDwLkJ0X8zxmq1CLxUVh7sbPOYXW9GcDmWEKD0CVom9_Uv85TXqZ7kkJC4-SAGXI-YOjHuOhlucb73ief8zbE.B8Ao0TJ7t64xKXVCSbW8QA",
-                    
+
                     },
                     body: JSON.stringify({
                         intent: intent,    // Should be the same as the one used in createOrder (CAPTURE/Authorize)
