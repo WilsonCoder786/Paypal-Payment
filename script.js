@@ -88,7 +88,7 @@ url_to_head(paypal_sdk_url + "?client-id=" + client_id + "&enable-funding=paypal
             //     console.log(err);
             // }
             createOrder: function (data, actions) {
-                return fetch("http://wait4me-api.thesuitchstaging2.com:6002/api/v1/payment/order-create", {
+                return fetch("https://wait4me-api.thesuitchstaging2.com:6002/api/v1/payment/order-create", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json; charset=utf-8",
@@ -113,7 +113,7 @@ url_to_head(paypal_sdk_url + "?client-id=" + client_id + "&enable-funding=paypal
 
             onApprove: function (data, actions) {
                 let order_id = data.orderID;
-                return fetch("http://wait4me-api.thesuitchstaging2.com:6002/api/v1/payment/order_complete", {
+                return fetch("https://wait4me-api.thesuitchstaging2.com:6002/api/v1/payment/order_complete", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json; charset=utf-8",
